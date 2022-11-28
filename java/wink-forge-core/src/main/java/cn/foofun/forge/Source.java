@@ -3,7 +3,6 @@ package cn.foofun.forge;
 /**
  * 数据生成器
  *
- * @param <T>
  */
 public interface Source<T> {
 

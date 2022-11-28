@@ -9,7 +9,6 @@ import java.util.Map;
 /**
  * 生成Bean多个字段值
  *
- * @param <T>
  */
 public class BeanSource<T> implements Source<T> {
 

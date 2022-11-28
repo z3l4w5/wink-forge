@@ -5,7 +5,6 @@ import java.util.List;
 /**
  * 将一个列表值中的乱序输出
  *
- * @param <T>
  */
 public class ValueListSource<T> implements Source<T> {
 

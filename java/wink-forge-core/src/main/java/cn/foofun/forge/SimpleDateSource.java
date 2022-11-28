@@ -29,6 +29,10 @@ public class SimpleDateSource implements Source<Date> {
         if (r < 0) {
             r -= r;
         }
+        
+        if (r == 0) {
+            return begin;
+        }
 
         int v = new Random().nextInt(r) * 1000;
 

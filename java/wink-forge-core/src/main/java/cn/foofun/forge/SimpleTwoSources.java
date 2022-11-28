@@ -5,7 +5,6 @@ import java.util.Random;
 /**
  * 简单合并两个Source
  *
- * @param <T>
  */
 public class SimpleTwoSources<T> implements Source<T> {
 
