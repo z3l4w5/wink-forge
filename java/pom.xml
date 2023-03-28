@@ -86,6 +86,7 @@
 
     <modules>
         <module>wink-forge-core</module>
+        <module>wink-pour-web</module>
     </modules>
 
     <distributionManagement>
