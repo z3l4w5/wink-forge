@@ -1,6 +1,8 @@
 package cn.foofun.forge;
 
 import cn.foofun.forge.domain.DateRange;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -62,6 +64,11 @@ public class Forge {
     public static <T> Source<T> buildInValues(T... values) {
 
         return new ValueListSource<>(Arrays.asList(values));
+    }
+
+    public static <T> Source<T> buildFromList(List<T> list) {
+
+        return new ValueListSource<>(list);
     }
 
     public static Source<DateRange> buildInDays(Date begin, Date end, int minDays, int maxDays) {
