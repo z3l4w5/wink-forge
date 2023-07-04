@@ -7,7 +7,9 @@ import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.util.Arrays;
 import java.util.Date;
+import java.util.List;
 
 public class ForgeTest {
 
@@ -93,5 +95,16 @@ public class ForgeTest {
         }
 
         connection.close();
+    }
+
+    @Test
+    void buildRateTest() {
+
+        Source<String> source = Forge.valuesInRate(Arrays.asList("A", "B"), Arrays.asList(1, 5));
+
+        for (int i = 0; i < 100; i++) {
+            String next = source.next();
+            System.out.println(next);
+        }
     }
 }
